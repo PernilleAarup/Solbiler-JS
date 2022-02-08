@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PRO1 Projekt</title>
+</head>
+
+<body class="wrapper">
+
+        <section>
+            <div class="header-flex">
+                <h2>Solbiler ApS</h2>
+                <img class="logindbillede" src="img/logind.png" alt="logindmand">
+            </div>
+        </section>
+
+
+    <section class="billed-sektion">
+        <form id="formular" class="formular" action="" method="">
+            <h1 class="formular-overskrift">Find bilen som passer dig</h1>
+        <div class="flex-top">
+            <div class="formular-felter">
+                <div>
+                    <label for="afhentning" class="etiket">Jeg henter den</label>
+                    <input type="date" id="afhentning" required>
+                </div>
+
+                <div>
+                    <label for="aflevering" class="etiket">Jeg afleverer den</label>
+                    <input type="date" id="aflevering" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-bottom">
+            <div class="formular-felter">
+                <div>
+                    <label for="personer" class="etiket">Antal personer:</label>
+                    <select id="personer" name="personer" required>
+                        <option value="1">1 person</option>
+                        <option value="2">2 personer</option>
+                        <option value="3">3 personer</option>
+                        <option value="4">4 personer</option>
+                        <option value="5">5 personer </option>
+                        <option value="6">6 personer</option>
+                        <option value="7">7 personer</option>
+                    </select>
+                </div>
+            </div>
+        
+            <div class="formular-felter">
+                <div>
+                    <label for="kufferter" class="etiket">Antal kufferter:</label>
+                    <select id="kufferter" name="kufferter" required>
+                        <option value="0">0 - kun taske</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="knap">
+                <button class="formular-knap" type="submit">Søg</button>
+        </div>
+    </form>
+    </section>
+    
+    <section class="bil_sektion" id="bil_sektion"></section>
+
+    <template id="skabelon_output">
+        <div class="bil">
+            <img class="bilstr">
+            <div class="bilMM"></div>
+            <div class="bildetaljer">
+                <div class="kategori">Kategori: </div>
+                <div class="antalpersoner">Personer: </div>
+                <div class="antalkufferter">Kufferter: </div>
+            </div>
+            <div class="prisogbook">
+                <div class="lejeudgift">DKK: </div> 
+                <a href="#" class="booknu_knap">Book nu</a>
+            </div>
+        </div>
+    </template>
+
+<script src="script.js"></script>
+  
+</body>
+
+</html>

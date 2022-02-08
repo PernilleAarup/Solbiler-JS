@@ -1,0 +1,137 @@
+/* Det første er generelle regler */ 
+:after
+:before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styling af header*/
+.header-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.logindbillede{
+    height: 40px;
+    padding-top: 10px;
+}
+
+/* Styling af første del af forside - billede med formular */
+
+.billed-sektion{
+background-image: url(img/camera-1391325_1920.png);
+height:400px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.formular{
+    position:relative;
+    top: 80px;
+    width: 400px;
+    height: 245px;
+    background-color: #f4edc4;
+    padding: 15px;
+    margin-left: 120px;
+    border: 1px solid rgb(185, 185, 33);
+    border-radius: 5px;  
+}
+
+.formular-overskrift{
+    text-align: center;
+    font-size: 20px;
+}
+
+.formular-felter{
+    display: flex;
+    text-align: center;
+    padding: 20px;
+}
+
+.knap{
+    display: flex;
+    justify-content: center;
+}
+
+.formular-knap{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.flex-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.flex-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* Styling af bilbokse*/
+
+.bil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 1px solid rgb(185, 185, 33);
+    padding: 15px;
+    margin: 15px;
+    border-radius: 5px;
+    background-color: #f4edc4;
+}
+
+.bil
+{
+    text-align: center;
+}
+
+.bilMM,
+.lejeudgift{
+    font-weight: bold;
+}
+
+/* Styling af bil-billeder*/
+.bilstr{
+    height: 150px;
+}
+
+/* Responsive layout */
+
+@media screen and (max-width: 800px){
+.formular{
+margin-left: 60px;
+}
+.bil{
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+.bilstr{
+height: 100px;
+}
+}
+
+@media screen and (max-width: 540px){
+.formular{
+margin: 15px;
+padding: auto;
+width: auto;
+height: auto;
+}
+}  
